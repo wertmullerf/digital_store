@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
@@ -11,9 +12,121 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
+.inactive {
+    transform: translate(-100%) !important;
+    transition: 0.5s;
+}
 .sticky {
-    background: #050021;
     transition: 0.1s;
+    background: #020013;
+}
+.navbar {
+    background: #fff;
+    min-width: 400px;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    transform: translate(0);
+    transition: 0.5s;
+}
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar ul,
+    .navbar__bottom {
+        align-items: flex-start;
+    }
+    .navbar ul li a,
+    .navbar ul li a i {
+        font-size: 1rem !important;
+    }
+}
+.navbar strong {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__top button {
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.navbar__top button:hover {
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+.navbar__top button i {
+    font-size: 2rem;
+}
+.navbar-search {
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #020013;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin-top: 3.5rem;
+}
+.navbar-search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+}
+.navbar-search button {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    line-height: 10px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.69);
+}
+.navbar ul li {
+    margin: 4rem 0;
+}
+.navbar ul li a {
+    color: #252525;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar ul li a i {
+    font-size: 2rem;
+}
+.navbar ul li a:hover {
+    color: #e500ff;
+}
+.navbar__bottom {
+    position: absolute;
+    bottom: 10px;
+}
+.navbar__bottom a {
+    color: #252525;
+    text-decoration: underline;
+}
+.navbar__bottom a:hover {
+    color: #e500ff;
+}
+.navbar__search input::placeholder {
+    font-weight: 500 !important;
+    font-size: 14px;
 }
 body {
     font-family: "Montserrat", sans-serif;
@@ -24,7 +137,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 6rem;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -46,10 +159,17 @@ header {
     gap: 10px;
 }
 @media (max-width: 768px) {
+    header {
+        padding: 0 4rem;
+    }
     .cartLanguajes {
         flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
+}
+select {
+    background-image: url(../assets/about-us.png);
 }
 /*HERO*/
 .hero {
@@ -97,8 +217,8 @@ header {
     cursor: pointer;
     color: rgba(0, 0, 0, 0.69);
 }
-::placeholder {
-    font-weight: 800;
+.search::placeholder {
+    font-weight: 600;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.69);
 }
@@ -130,13 +250,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 50vh;
+    min-height: 70vh;
     justify-content: space-evenly;
     text-align: center;
 }
 .categories h3 {
     font-size: 1.5rem;
-    padding-top: 2rem;
+    padding: 4rem;
 }
 .cards {
     display: flex;
@@ -187,10 +307,95 @@ header {
     width: max-content;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    margin-bottom: 2rem;
+    padding: 4rem;
 }
-.viewMore__container:hover {
-    border-bottom: 2px solid #fff;
+.viewMore__container button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #e500ff;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    /*color: #282936;*/
+    color: #bebebe;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
 }
 .viewMore__button {
     display: flex;
@@ -255,13 +460,24 @@ header {
         background-position: left;
     }
 }
+/*SALE*/
 .sale {
     min-height: 50vh;
     display: flex;
     color: #fff;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 4rem;
+}
+.fifa23 {
+    width: 300px;
+}
+@media (max-width: 932px) {
+    .sale {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
 }
 .sale h2 {
     font-size: 4rem;
@@ -282,7 +498,7 @@ header {
 .sale button {
     border: none;
     padding: 0.5rem 2rem;
-    background: #00479e;
+    background: #e500ff;
     border-radius: 50px;
     color: #fff;
     font-weight: 700;
@@ -290,7 +506,8 @@ header {
     line-height: 24px;
     margin: 2rem 0;
     cursor: pointer;
+    transition: 0.5s;
 }
 .sale button:hover {
-    background: blue;
+    background: #e600ff8c;
 }
