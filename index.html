@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <script src="js/index.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Digital Store | Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" id="burger-menu"><i class='bx bx-menu-alt-left'></i></button>
+        <img src="assets/logo.png" alt="" class="logo">
+        <div class="cartLanguajes">
+            <select name="" id="">
+                <option value="">🇺🇸</option>
+                <option value="">🇮🇹</option>
+                <option value="">🇬🇧</option>
+            </select>
+            <button class="header__button"><i class='bx bx-shopping-bag'></i></button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__text">
+            <h1>Find any wish in the same place</h1>
+            <form action="" class="search">
+                <input type="text" placeholder="Search your next game">
+                <button type="submit"><i class='bx bx-search'></i></button>
+            </form>
+        </div>
+    </section>
+    <section class="categories">
+        <h3>Discover by category</h3>
+        <div class="cards">
+            <div class="card action">
+                <span>Action</span>
+            </div>
+            <div class="card adventure">
+                <span>Adventure</span>
+            </div>
+            <div class="card sports">
+                <span>Sports</span>
+            </div>
+            <div class="card shooter">
+                <span>Shooter</span>
+            </div>
+            <div class="card simulation">
+                <span>Simulation</span>
+            </div>
+        </div>
+        <div class="viewMore__container">
+            <a class="viewMore__button" href="#">View more <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </section>
+    <section class="aboutChooseUs">
+        <div class="about">
+            <strong>About us</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut amet expedita atque sed quam
+                repellendus voluptatum earum nostrum hic quis deserunt facere, dolore dolores fugiat rerum sequi labore
+                ipsam?</p>
+        </div>
+        <div class="chose">
+            <strong>Why should you chose us?</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis sunt velit cupiditate iusto ad
+                laborum quidem odio accusantium, hic sed commodi debitis assumenda in enim dolorem aliquam vel tempore.
+            </p>
+        </div>
+    </section>
+    <section class="sale">
+        <div class="sale__text">
+            <h2>SALE</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content</p>
+            <div class="text__prices">
+                <strong class="realprice">40$</strong>
+                <strong class="discount">25$</strong>
+            </div>
+            <button>Buy now</button>
+        </div>
+        <img src="assets/fifa23.png" alt="">
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
