@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Digital Store | Home</title>
@@ -15,14 +16,30 @@
         <button class="header__button" id="burger-menu"><i class='bx bx-menu-alt-left'></i></button>
         <img src="assets/logo.png" alt="" class="logo">
         <div class="cartLanguajes">
-            <select name="" id="">
-                <option value="">🇺🇸</option>
-                <option value="">🇮🇹</option>
-                <option value="">🇬🇧</option>
-            </select>
             <button class="header__button"><i class='bx bx-shopping-bag'></i></button>
         </div>
     </header>
+    <nav class="navbar inactive">
+        <div class="navbar__top">
+            <strong>Menu</strong>
+            <button id="closeNav"><i class='bx bx-x'></i></button>
+        </div>
+        <form action="" class="navbar-search">
+            <input type="text" placeholder="Search your next game">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+        <ul>
+            <li><a href="#"><i class='bx bxs-home'></i>HOME</a></li>
+            <li><a href="#"><i class='bx bxs-info-circle'></i>ABOUT</a></li>
+            <li><a href="#"><i class='bx bxs-food-menu'></i>CATALOG</a></li>
+            <li><a href="#"><i class='bx bxs-offer'></i>OFFERS</a></li>
+            <li><a href="#"><i class='bx bxs-contact'></i>CONTACT</a></li>
+        </ul>
+        <div class="navbar__bottom">
+            <h6>Developed by <a href="">Wertmuller Facundo</a> & <a href="">Vitorino Luca</a>
+            </h6>
+        </div>
+    </nav>
     <section class="hero">
         <div class="hero__text">
             <h1>Find any wish in the same place</h1>
@@ -52,7 +69,12 @@
             </div>
         </div>
         <div class="viewMore__container">
-            <a class="viewMore__button" href="#">View more <i class='bx bx-right-arrow-alt'></i></a>
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+            </button>
         </div>
     </section>
     <section class="aboutChooseUs">
@@ -79,9 +101,10 @@
             </div>
             <button>Buy now</button>
         </div>
-        <img src="assets/fifa23.png" alt="">
+        <img class="fifa23" src="assets/fifa23.png" alt="" data-tilt>
     </section>
     <script src="js/index.js"></script>
+    <script src="js/tilt.js"></script>
 </body>
 
 </html>
