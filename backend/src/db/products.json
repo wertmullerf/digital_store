@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Grand Theft Auto V PS4",
+    "price": {
+      "usd": 20,
+      "ar": 7500
+    },
+    "description": "Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world.",
+    "stock": 13,
+    "thumbnail": "https://i.ibb.co/3kchHCf/fifa23.png",
+    "category": "action",
+    "timestamp": "12/29/2022, 11:08:49 PM",
+    "id": 1
+  },
+  {
+    "title": "Call of Duty®: WWII Gold Edition",
+    "price": {
+      "usd": 35,
+      "ar": 9200
+    },
+    "description": "Call of Duty: WWII is the fourteenth game in the Call of Duty franchise and Sledgehammer Games' second to be developed in a three-year development cycle. Set during World War II, it tells the story of an unbreakable brotherhood of common men fighting to preserve freedom in a world on the brink of tyranny.",
+    "stock": 20,
+    "thumbnail": "https://i.ibb.co/vxzsJyd/cod-wwii.png",
+    "category": "shooter",
+    "timestamp": "12/29/2022, 11:09:48 PM",
+    "id": 2
+  },
+  {
+    "title": "NBA 2K23 Standar Edition PS4",
+    "price": {
+      "usd": 30,
+      "ar": 9000
+    },
+    "description": "NBA 2K23 is a basketball video game developed by Visual Concepts and published by 2K Sports, based on the National Basketball Association (NBA). It is the 24th installment in the NBA 2K franchise and the successor to NBA 2K22.",
+    "stock": 10,
+    "thumbnail": "https://i.ibb.co/QN15Zt9/nba2k13.png",
+    "category": "sports",
+    "timestamp": "12/29/2022, 11:10:17 PM",
+    "id": 3
+  },
+  {
+    "title": "Grand Theft Auto V PS4",
+    "price": {
+      "usd": 20,
+      "ar": 7500
+    },
+    "description": "Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world.",
+    "stock": 13,
+    "thumbnail": "https://i.ibb.co/M8yZ3rP/gtav.png",
+    "category": "action",
+    "timestamp": "12/29/2022, 11:10:51 PM",
+    "id": 4
+  },
+  {
+    "title": "Grand Theft Auto V PS4",
+    "price": {
+      "usd": 20,
+      "ar": 7500
+    },
+    "description": "Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world.",
+    "stock": 13,
+    "thumbnail": "https://i.ibb.co/M8yZ3rP/gtav.png",
+    "category": "action",
+    "timestamp": "12/29/2022, 11:11:19 PM",
+    "id": 5
+  }
+]
