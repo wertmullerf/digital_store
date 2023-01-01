@@ -1,136 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="assets/logo.png" />
-        <link
-            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/styles.css" />
-        <title>Digital Store | Home</title>
-    </head>
 
-    <body>
-        <header class="header">
-            <button class="header__button" id="burger-menu">
-                <i class="bx bx-menu-alt-left"></i>
-            </button>
-            <img src="assets/logo.png" alt="" class="logo" />
-            <div class="cartLanguajes">
-                <button class="header__button">
-                    <i class="bx bx-shopping-bag"></i>
-                </button>
-            </div>
-        </header>
-        <nav class="navbar inactive">
-            <div class="navbar__top">
-                <strong>Menu</strong>
-                <button id="closeNav"><i class="bx bx-x"></i></button>
-            </div>
-            <form action="" class="navbar-search">
-                <input type="text" placeholder="Search your next game" />
-                <button type="submit"><i class="bx bx-search"></i></button>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Digital Store | Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" id="burger-menu"><i class="bx bx-menu-alt-left"></i></button>
+        <a href="#">
+            <img class="logo" src="assets/logo.png" alt="logo" style="width: 100px;" />
+        </a>
+        <button class="header__button" id="cart-menu"><i class="bx bx-shopping-bag"></i></button>
+    </header>
+    <nav class="navbar nav__inactive">
+        <div class="navbar-cart__top">
+            <strong class="navbar-cart__strong">Menu</strong>
+            <button class="navbar-cart__button" id="closeNav"><i class="bx bx-x"></i></button>
+        </div>
+        <form class="navbar-search">
+            <input class="navbar-search__input" type="text" placeholder="Search your next game" />
+            <button class="navbar-search__button" type="submit"><i class="bx bx-search"></i></button>
+        </form>
+        <ul class="navbar__list">
+            <li class="navbar__link"><a href="#"><i class="bx bxs-home"></i>HOME</a></li>
+            <li class="navbar__link"><a href="#"><i class="bx bxs-info-circle"></i>ABOUT</a></li>
+            <li class="navbar__link"><a href="#"><i class="bx bxs-food-menu"></i>CATALOG</a></li>
+            <li class="navbar__link"><a href="#"><i class="bx bxs-offer"></i>OFFERS</a></li>
+            <li class="navbar__link"><a href="#"><i class="bx bxs-contact"></i>CONTACT</a></li>
+        </ul>
+        <div class="navbar__bottom">
+            <h6>
+                Developed by <a href="https://github.com/wertmullerf" target="_blank">Wertmuller Facundo</a> &
+                <a href="https://github.com/VitorinoLuca" target="_blank">Vitorino Luca</a>
+            </h6>
+        </div>
+    </nav>
+    <div class="cart cart__inactive">
+        <div class="navbar-cart__top">
+            <strong class="navbar-cart__strong">Cart</strong>
+            <button class="navbar-cart__button" id="closeCart"><i class="bx bx-x"></i></button>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="hero__text">
+            <h1 class="hero__tittle">Find any wish in the same place</h1>
+            <form action="" class="hero__search">
+                <input class="hero__search__input" type="text" placeholder="Search your next game" />
+                <button class="hero__search__button" type="submit"><i class="bx bx-search"></i></button>
             </form>
-            <ul>
-                <li>
-                    <a href="#"><i class="bx bxs-home"></i>HOME</a>
-                </li>
-                <li>
-                    <a href="#"><i class="bx bxs-info-circle"></i>ABOUT</a>
-                </li>
-                <li>
-                    <a href="#"><i class="bx bxs-food-menu"></i>CATALOG</a>
-                </li>
-                <li>
-                    <a href="#"><i class="bx bxs-offer"></i>OFFERS</a>
-                </li>
-                <li>
-                    <a href="#"><i class="bx bxs-contact"></i>CONTACT</a>
-                </li>
-            </ul>
-            <div class="navbar__bottom">
-                <h6>
-                    Developed by <a href="">Wertmuller Facundo</a> &
-                    <a href="">Vitorino Luca</a>
-                </h6>
+        </div>
+    </section>
+    <section class="categories">
+        <h2 class="categories__tittle">Discover by category</h2>
+        <div class="categories__cards">
+            <div class="card action">
+                <strong class="card__strong">Action</strong>
             </div>
-        </nav>
-        <section class="hero">
-            <div class="hero__text">
-                <h1>Find any wish in the same place</h1>
-                <form action="" class="search">
-                    <input type="text" placeholder="Search your next game" />
-                    <button type="submit"><i class="bx bx-search"></i></button>
-                </form>
+            <div class="card adventure">
+                <strong class="card__strong">Adventure</strong>
             </div>
-        </section>
-        <section class="categories">
-            <h3>Discover by category</h3>
-            <div class="cards">
-                <div class="card action">
-                    <span>Action</span>
-                </div>
-                <div class="card adventure">
-                    <span>Adventure</span>
-                </div>
-                <div class="card sports">
-                    <span>Sports</span>
-                </div>
-                <div class="card shooter">
-                    <span>Shooter</span>
-                </div>
-                <div class="card simulation">
-                    <span>Simulation</span>
-                </div>
+            <div class="card sports">
+                <strong class="card__strong">Sports</strong>
             </div>
-            <div class="viewMore__container">
-                <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Learn More</span>
-                </button>
+            <div class="card shooter">
+                <strong class="card__strong">Shooter</strong>
             </div>
-        </section>
-        <section class="aboutChooseUs">
-            <div class="about">
-                <strong>About us</strong>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus aut amet expedita atque sed quam repellendus
-                    voluptatum earum nostrum hic quis deserunt facere, dolore
-                    dolores fugiat rerum sequi labore ipsam?
-                </p>
+            <div class="card simulation">
+                <strong class="card__strong">Simulation</strong>
             </div>
-            <div class="chose">
-                <strong>Why should you chose us?</strong>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Porro veritatis sunt velit cupiditate iusto ad laborum
-                    quidem odio accusantium, hic sed commodi debitis assumenda
-                    in enim dolorem aliquam vel tempore.
-                </p>
+        </div>
+        <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">learn more</span>
+        </button>
+    </section>
+    <section class="aboutChooseUs">
+        <div class="about">
+            <strong class="aboutChoose__strong">About us</strong>
+            <p class="aboutChoose__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus aut amet expedita atque sed quam repellendus
+                voluptatum earum nostrum hic quis deserunt facere, dolore
+                dolores fugiat rerum sequi labore ipsam?
+            </p>
+        </div>
+        <div class="chose">
+            <strong class="aboutChoose__strong">Why should you chose us?</strong>
+            <p class="aboutChoose__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Porro veritatis sunt velit cupiditate iusto ad laborum
+                quidem odio accusantium, hic sed commodi debitis assumenda
+                in enim dolorem aliquam vel tempore.
+            </p>
+        </div>
+    </section>
+    <section class="sale">
+        <img class="sale__img" src="assets/fifa23.png" alt="" data-tilt />
+        <div class="sale__text">
+            <h2 class="sale__tittle">SALE</h2>
+            <p class="sale__p">
+                It is a long established fact that a reader will be
+                distracted by the readable content
+            </p>
+            <div class="text__prices">
+                <strong class="prices__real">40$</strong>
+                <strong class="prices__offer">25$</strong>
             </div>
-        </section>
-        <section class="sale">
-            <div class="sale__text">
-                <h2>SALE</h2>
-                <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content
-                </p>
-                <div class="text__prices">
-                    <strong class="realprice">40$</strong>
-                    <strong class="discount">25$</strong>
-                </div>
-                <button>Buy now</button>
-            </div>
-            <img class="fifa23" src="assets/fifa23.png" alt="" data-tilt />
-        </section>
-        <script src="js/index.js"></script>
-        <script src="js/tilt.js"></script>
-    </body>
+            <button class="sale__button">Buy now</button>
+        </div>
+    </section>
+    <section class="suscribe">
+        <div class="suscribe__text">
+            <h2 class="suscribe__tittle">Join us for new news.</h2>
+            <p class="suscribe__p">You will receive our new promotions, offers and events monthly.</p>
+        </div>
+        <form class="suscribe__form">
+            <input class="suscribe__input" type="email" id="" placeholder="Enter your email address">
+            <button class="suscribe__button btn">Suscribe!</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <a href="#">
+            <img class="logo" src="assets/logo.png" alt="logo" style="width: 100px;" />
+        </a>
+        <ul class="footer__navbar">
+            <li><a href="#"></i>HOME</a></li>
+            <li><span></span></li>
+            <li><a href="#"></i>ABOUT</a></li>
+            <li><span></span></li>
+            <li><a href="#"></i>CATALOG</a></li>
+            <li><span></span></li>
+            <li><a href="#"></i>OFFERS</a></li>
+            <li><span></span></li>
+            <li><a href="#"></i>CONTACT</a></li>
+        </ul>
+        <div class="media">
+            <a class="media-link" href="#"><i class='bx bxl-instagram'></i></a>
+            <a class="media-link" href="#"><i class='bx bxl-facebook'></i></a>
+            <a class="media-link" href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p style="color:#fff; padding: 1rem;margin-top: 2rem;">©2022 - Digital Store</p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/tilt.js"></script>
+</body>
+
 </html>

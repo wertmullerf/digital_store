@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 require("dotenv").config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 const productsRouter = require("./routes/productsRouter");
 app.use(cors());
 app.use(express.static("public"));
